@@ -1,7 +1,10 @@
 {
   "dependencies": {
-    "shortid": "^2.2.15",
+    "express": "^4.17.1",
     "unique-names-generator": "^4.2.0",
     "ws": "^7.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
