@@ -1,13 +1,12 @@
 const WebSocket = require("ws");
 const name = require("./randomName");
-const fs = require("fs");
 const server = require("http").createServer();
 const express = require("express");
 const app = express();
 
-// serve files from the public directory
+console.log(`This server is named: ${name}`);
 
-// wire the express app up to the raw Node HTTP server
+// serve files from the public directory
 server.on("request", app.use(express.static("public")));
 
 /// tell the WebSocket server to use the same HTTP server
