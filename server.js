@@ -9,7 +9,7 @@ console.log(`This server is named: ${name}`);
 // serve files from the public directory
 server.on("request", app.use(express.static("public")));
 
-/// tell the WebSocket server to use the same HTTP server
+// tell the WebSocket server to use the same HTTP server
 const wss = new WebSocket.Server({
   server,
 });
